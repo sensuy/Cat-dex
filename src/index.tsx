@@ -1,13 +1,18 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import { StrictMode } from 'react';
+
+// third party
+import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// project imports
+
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root')
 );
 
