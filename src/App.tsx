@@ -1,9 +1,15 @@
+import Routes from "./routes";
+import { AuthProvider } from "./context/AuthContext";
 
-import './App.css';
+// routing
 
 function App() {
   return (
     <>
+      <AuthProvider>
+        <Routes />
+      </AuthProvider>
+      {/* <Snackbar /> */}
     </>
   );
 }
